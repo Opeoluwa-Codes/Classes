@@ -1,0 +1,90 @@
+react icon
+styled component        https://www.npmjs.com/package/styled-components
+
+
+        installing styled components:
+        1. npm i styled-components
+
+
+        installing react icon:
+        1. npm install react-icons --save
+
+
+check your dependencies
+you may need to reopen the app to see
+
+        install an extension - VSCode-styled-components (provides snippet - suggestions)
+
+input [import styled from "styled-components"] into your jsx file
+
+naming when using sc - start with a capital letter
+
+        install auto rename tag extension by Jun Han
+
+connecting defined tag to styled-component 
+
+after importing it..go below export
+
+if you renamed a div to container
+then write:
+
+        const Container = styled.div`
+in here comes properties - background-color: red;
+        `
+
+importing from react icon
+go to the website
+pick an icon
+copy the import code
+then call it within your container
+<abcd/>
+now, inside your const Container, properties in there will affect the icon, too
+
+  whatfont  - extension
+
+import fonts - copy the web link from google fonts
+    click get font
+paste it in index.html
+        link href - in the head
+Go to index.css -- root folder
+
+ import styled from "styled-components";
+import { MdAddToHomeScreen } from "react-icons/md";
+
+        const App = () =>{
+        return(
+            <Container>
+            ops <MdAddToHomeScreen/>
+            <nav>
+
+            </nav>
+            </Container>
+        ); 
+        };
+
+        export default App;
+
+        const Container = styled.div`
+        background-color: red;
+        nav{
+            
+        }
+  `
+install react router dom -- npm i react-router-dom
+
+install axious  -- npm i axios
+
+routing---from Main.jsx....or use App.jsx
+        add this -- import { BrowserRouter, Routes, Route} from "react-router-dom"; to app.jsx or main.jsx
+        then wrap your app.jsx div content into <BrowserRouter><BrowserRouter/> -- can alternatively put it in the div on main.jsx
+        Then add <Routes><Routes/> - wrapping pages you intend to move between.
+                header/footer - static element - you want it to appear anywhere -- thus, you need to add them out of the <Routes><Routes/>
+                then use <Route path="" element={}/>
+
+                Vercel - Opeoluwa-Codes
+
+                import link from react router dom on the page you wish to add a link for movement to
+
+                then add link tag to your button or whatever -- takes a property - to="" -- the path you specified earlier will then go into to.
+
+LEARN ABOUT HOOKS - USESTATE, USEEFFECT, USECONTENT, USECOMEBACK
