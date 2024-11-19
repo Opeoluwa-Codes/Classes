@@ -1,0 +1,12 @@
+// signup
+// login
+// change password
+// update information
+// update profile picture
+
+// each would have a route
+// import express
+
+
+get request goes into the router folder
+post request is more secure
